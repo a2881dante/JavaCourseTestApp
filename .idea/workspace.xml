@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ed74df2-0b35-4c94-9d4b-04c78f95806a" name="Changes" comment="git init">
+    <list default="true" id="2ed74df2-0b35-4c94-9d4b-04c78f95806a" name="Changes" comment="Fix: delete unnecessary outputs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ReversePolishNotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ReversePolishNotation.java" afterDir="false" />
     </list>
@@ -75,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650642884260</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix: delete unnecessary outputs">
+      <created>1650643589177</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650643589177</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +98,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git init" />
-    <option name="LAST_COMMIT_MESSAGE" value="git init" />
+    <MESSAGE value="Fix: delete unnecessary outputs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix: delete unnecessary outputs" />
   </component>
 </project>

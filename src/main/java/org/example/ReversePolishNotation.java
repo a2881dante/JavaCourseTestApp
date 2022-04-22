@@ -26,6 +26,10 @@ public class ReversePolishNotation {
         boolean isUni;
         this.postfixStack = new Stack<>();
 
+        expr = expr.replaceAll(" ", "");
+        expr = expr.replaceAll("\\)\\(", ")*(");
+        expr = expr.replaceAll("--", "+");
+
         if( !Arrays.asList('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '-', '+', '(').contains(expr.charAt(0))
                 || !Arrays.asList('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ')')
                         .contains(expr.charAt(expr.length()-1))) {
@@ -56,6 +60,7 @@ public class ReversePolishNotation {
                         }
                     }
                     operandStack.push(isUni ? '#' : sign);
+                    break;
                 case '-':
                     signCount++;
                     if (signCount > 2) {
@@ -165,7 +170,6 @@ public class ReversePolishNotation {
     }
 
     private double calculateResult() {
-        System.out.println(postfixStack);
         Stack<Double> numStack = new Stack<>();
         Iterator<String> itr = this.postfixStack.iterator();
         while(itr.hasNext()){
@@ -201,6 +205,7 @@ public class ReversePolishNotation {
                     case "!":
                         a1 = numStack.pop();
                         res = -a1;
+                        break;
                     case "#":
                 }
                 numStack.push(res);
