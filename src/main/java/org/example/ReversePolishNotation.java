@@ -33,10 +33,8 @@ public class ReversePolishNotation {
             return false;
         }
 
-        System.out.println(expr.length());
         for(int i=0; i < expr.length(); i++) {
             char sign = expr.charAt(i);
-            System.out.println(sign);
             switch( sign ) {
                 case '+':
                     signCount++;
@@ -109,7 +107,6 @@ public class ReversePolishNotation {
                     break;
                 case ')':
                     braceCount--;
-                    System.out.println(braceCount);
                     if (braceCount < 0) {
                         System.out.println("ERROR: Check your placement of round brackets\n");
                         return false;
@@ -173,7 +170,6 @@ public class ReversePolishNotation {
         Iterator<String> itr = this.postfixStack.iterator();
         while(itr.hasNext()){
             String curr = this.postfixStack.pop();
-            System.out.println(curr);
             try {
                 double num = Double.parseDouble(curr);
                 numStack.push(num);
